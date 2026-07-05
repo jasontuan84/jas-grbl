@@ -81,6 +81,37 @@ preview, so you always see exactly what the laser will do before a single photon
 
 ---
 
+## ✅ Requirements
+
+**You only need Inkscape** — the extension runs on Inkscape's own bundled Python, so there
+is no separate Python setup, virtualenv, or `pip install` for normal use.
+
+| Component | Purpose | Where it comes from |
+|-----------|---------|---------------------|
+| Inkscape **1.2+** (targets **1.4.2**) | Host application | — |
+| Python 3, `inkex`, `lxml`, Cairo | Extension API and SVG/preview handling | Bundled with Inkscape |
+| PyGObject (`gi`) + **GTK 3** | The dialog UI | Bundled with Inkscape (Windows/macOS). On Linux, install `python3-gi` + `gir1.2-gtk-3.0` if missing |
+
+Works on **Windows, macOS, and Linux**.
+
+### Optional extras
+
+Install these into **Inkscape's bundled Python** only if you want the feature — each is a
+lazy import with a safe fallback, so the extension never crashes when one is absent:
+
+| Package | Enables | If missing |
+|---------|---------|------------|
+| **`pyserial`** | USB streaming (connect / jog / stream to the machine) | G-code still generates and saves; only USB sending is unavailable |
+| `numpy` | High-quality single-stroke (centerline) text | Falls back to a raster medial-axis |
+| `scipy` | Voronoi fill | Falls back to Hatch |
+
+```bash
+# Only needed for USB streaming:
+pip install pyserial
+```
+
+---
+
 ## 📦 Installation
 
 > **Requires Inkscape 1.2 or newer** (the built-in Extension Manager). On older versions,
@@ -149,6 +180,33 @@ named to match.
 ## 📝 Changelog
 
 See **[CHANGES_LOG.md](CHANGES_LOG.md)** for the full version history.
+
+---
+
+## 🙏 Acknowledgements
+
+**jasGrbl** stands on the shoulders of these excellent open-source projects. A huge
+**thank you — cảm ơn** to everyone who builds and maintains them. 💛
+
+**Core (shipped with Inkscape):**
+
+| Library | Role |
+|---------|------|
+| [Inkscape · inkex](https://inkscape.gitlab.io/extensions/) | Extension framework and SVG document API |
+| [PyGObject](https://pygobject.gnome.org/) + [GTK 3](https://www.gtk.org/) | The dialog user interface |
+| [Cairo](https://www.cairographics.org/) | Live toolpath preview rendering |
+| [lxml](https://lxml.de/) | SVG / XML parsing |
+
+**Optional (unlock extra features):**
+
+| Library | Role |
+|---------|------|
+| [pySerial](https://github.com/pyserial/pyserial) | USB serial streaming to the machine |
+| [NumPy](https://numpy.org/) | Centerline (single-stroke) text computation |
+| [SciPy](https://scipy.org/) | Voronoi fill generation |
+
+Thanks also to the **GRBL** community and to **LaserGRBL** / **LightBurn** for setting the
+conventions this extension follows. 🚀
 
 ## 📄 License
 
