@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Author</name>
+    <id>com.tuanquynh.jasgrbl.author</id>
+    <effect needs-live-preview="false" needs-document="true">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="jas GRBL"/>
+        </effects-menu>
+        <menu-tip>Show jas GRBL author, version and website information</menu-tip>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">jasgrbl_author.py</command>
+    </script>
+</inkscape-extension>

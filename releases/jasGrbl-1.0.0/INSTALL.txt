@@ -1,0 +1,39 @@
+jasGrbl 1.0.0
+================
+
+There are two ways to install. Method A is easiest if you have
+Inkscape 1.2 or newer; Method B works on every Inkscape version.
+
+-----------------------------------------------------------------
+METHOD A - Inkscape Extension Manager (Install Package)
+-----------------------------------------------------------------
+Requires Inkscape 1.2+ (has the extension manager).
+
+1. In Inkscape, open:  Extensions > Manage Extensions
+2. Go to the Install Package section and click the folder button
+   to choose a local file.
+3. Select the file:  jasGrbl-1.0.0.zip
+4. Restart Inkscape.
+
+Note: install the ZIP itself, not this unpacked folder.
+
+-----------------------------------------------------------------
+METHOD B - Manual copy (any Inkscape version)
+-----------------------------------------------------------------
+1. Copy this folder's CONTENTS (jasgrbl.inx, jasgrbl.py,
+   jasgrbl_pkg/, ...) into your Inkscape user extensions dir:
+     Windows: %APPDATA%\inkscape\extensions
+     macOS:   ~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions
+     Linux:   ~/.config/inkscape/extensions
+   (Exact path: Edit > Preferences > System > User extensions.)
+2. Restart Inkscape.
+
+-----------------------------------------------------------------
+AFTER INSTALLING
+-----------------------------------------------------------------
+Open the extension from:  Extensions > jas GRBL
+
+Optional - USB streaming needs pyserial in Inkscape's Python:
+   pip install pyserial
+The extension loads and generates G-code fine without it; only
+the USB streaming feature requires pyserial.

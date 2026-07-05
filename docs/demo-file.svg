@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="demo-file.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0396254"
+     inkscape:cx="409.76297"
+     inkscape:cy="335.69783"
+     inkscape:window-width="1371"
+     inkscape:window-height="918"
+     inkscape:window-x="441"
+     inkscape:window-y="86"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#999999;stroke:#000000;stroke-width:0.264583"
+       id="path1"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="34.866325"
+       sodipodi:cy="49.881748"
+       sodipodi:r1="19.852531"
+       sodipodi:r2="9.9262657"
+       sodipodi:arg1="0.94011503"
+       sodipodi:arg2="1.5684336"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 46.573266,65.915168 -11.683488,-6.107182 -11.654497,6.162324 2.197878,-12.99888 -9.462155,-9.179823 13.041851,-1.926569 5.806564,-11.835766 5.862429,11.808196 13.050809,1.864917 -9.418671,9.224434 z"
+       inkscape:transform-center-x="0.014495021"
+       inkscape:transform-center-y="-1.8819572"
+       transform="translate(21.5391, -9.92389)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264583"
+       id="rect1"
+       width="85.257072"
+       height="52.935734"
+       x="13.762209"
+       y="11.5797" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.3662px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#000000;stroke-width:1.11385"
+       x="122.13708"
+       y="20.986372"
+       id="text1"
+       transform="scale(0.86258078,1.1593117)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:1.11385;stroke:#000000;fill:none"
+         x="122.13708"
+         y="20.986372">JASON TUAN</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text Stroke">
+    <text
+       xml:space="preserve"
+       style="font-size:5.90253px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.491877"
+       x="104.82577"
+       y="38.364094"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.491877;fill:#000000;stroke:none"
+         x="104.82577"
+         y="38.364094">jas GRBL Inkscape Extension</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.491877;fill:#000000;stroke:none"
+         x="104.82577"
+         y="45.742256"
+         id="tspan3">- GCode generate</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.491877;fill:#000000;stroke:none"
+         x="104.82577"
+         y="53.120419"
+         id="tspan4">- GRBL Laser Stream</tspan></text>
+  </g>
+</svg>
